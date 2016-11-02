@@ -2664,7 +2664,7 @@ static void hci_run(void){
                 connection->state = ACCEPTED_CONNECTION_REQUEST;
                 connection->role  = HCI_ROLE_SLAVE;
                 if (connection->address_type == BD_ADDR_TYPE_CLASSIC){
-                    hci_send_cmd(&hci_accept_connection_request, connection->address, 1);
+                    //hci_send_cmd(&hci_accept_connection_request, connection->address, 1);
                 } 
                 return;
 #endif
